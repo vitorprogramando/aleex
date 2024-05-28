@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Tempo de geração: 28/05/2024 às 23:19
+- Versão do servidor: 10.4.32-MariaDB
+- Versão do PHP: 8.2.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="crud_example" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) DEFAULT NULL,
+                  `email` varchar(255) DEFAULT NULL,
+                  `phone` varchar(15) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'crud_example'
+    -->
+    <database name="crud_example">
+        <!-- Tabela users -->
+        <table name="users">
+            <column name="id">11</column>
+            <column name="name">vitor</column>
+            <column name="email">vg@gmail.com</column>
+            <column name="phone">83948560</column>
+        </table>
+        <table name="users">
+            <column name="id">13</column>
+            <column name="name">mateus</column>
+            <column name="email">vg052173@gmail.com</column>
+            <column name="phone">83948560</column>
+        </table>
+        <table name="users">
+            <column name="id">14</column>
+            <column name="name">mateus</column>
+            <column name="email">vg052173@gmail.com</column>
+            <column name="phone">83999485660</column>
+        </table>
+        <table name="users">
+            <column name="id">15</column>
+            <column name="name">dsadsa</column>
+            <column name="email">vg@gmail.com</column>
+            <column name="phone">83948560</column>
+        </table>
+        <table name="users">
+            <column name="id">16</column>
+            <column name="name">jonas</column>
+            <column name="email">vg052173@gmail.com</column>
+            <column name="phone">83948560</column>
+        </table>
+    </database>
+</pma_xml_export>

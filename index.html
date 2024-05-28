@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fa-solid fa-user-plus"> Cadastros dos Clientes</h1>
+        <br>
+        <br>
+        <form id="userForm">
+            <input type="hidden" id="userId" name="id">
+            <label for="name"><i class="fa-regular fa-user"></i> Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite aqui o nome do Cliente">
+            <label for="email"><i class="fa-regular fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite aqui o Email do Cliente" required>
+            <label for="phone"><i class="fa-solid fa-phone"></i> Telefone:</label>
+            <input type="number" id="phone" name="phone" placeholder="Digite aqui o Número do Cliente" required>
+            <button type="submit">Salvar</button>
+        </form>
+        <br>
+        <br>
+        <a href="index.html">
+        <button id="atualizar">Atualizar <i class="fa-solid fa-arrows-rotate"></i></button></a>
+        <button id="exportBtn">Exportar <i class="fa-solid fa-file-export"></i></button>
+        <br>
+        <br>
+        <hr />
+        <br>
+        <br>
+        <h3>Consultar Clientes</h3>
+        <br>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquise o nome do Cliente">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('exportBtn').addEventListener('click', function() {
+            window.location.href = 'export.php';
+        });
+    </script>
+</body>
+</html>
